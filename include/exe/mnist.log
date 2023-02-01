@@ -1,0 +1,155 @@
+48151: open a log Thu Jan 12 18:34:00 2023
+55355: verbose=1
+56076: data-dir=data
+56457: lr=1.000000
+62679: epochs=14
+63029: batch-size=64
+63360: train-data-size=-1
+63741: test-data-size=4294967295
+64151: weight-seed=45678901234523
+64462: dropout-seed-1=56789012345234
+64743: dropout-seed-2=67890123452345
+65013: grad-dbg=0
+65364: algo=0
+65704: log=mnist.log
+69742: host=lxj-System
+71425: USER=lxj
+71946: PWD=/home/lxj/Documents/parallel-distributed/21mnist/include/exe
+72718: SLURM_SUBMIT_DIR undefined
+73168: SLURM_SUBMIT_HOST undefined
+73579: SLURM_JOB_NAME undefined
+73980: SLURM_JOB_CPUS_PER_NODE undefined
+74341: SLURM_NTASKS undefined
+74731: SLURM_NPROCS undefined
+75112: SLURM_JOB_ID undefined
+75483: SLURM_JOBID undefined
+75844: SLURM_NNODES undefined
+76204: SLURM_JOB_NUM_NODES undefined
+76575: SLURM_NODELIST undefined
+76936: SLURM_JOB_PARTITION undefined
+77316: SLURM_TASKS_PER_NODE undefined
+78238: SLURM_JOB_NODELIST undefined
+78759: CUDA_VISIBLE_DEVICES undefined
+79500: GPU_DEVICE_ORDINAL undefined
+80082: SLURM_CPUS_ON_NODE undefined
+80693: SLURM_TASK_PID undefined
+81264: SLURM_NODEID undefined
+81755: SLURM_PROCID undefined
+82316: SLURM_LOCALID undefined
+82847: SLURM_JOB_UID undefined
+83358: SLURM_JOB_USER undefined
+83899: SLURM_JOB_GID undefined
+84460: SLURMD_NODENAME undefined
+9222133: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+13715783: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 4488721 nsec
+13716905: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+33376909: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 19659622 nsec
+33381427: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+38463999: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 5081941 nsec
+38466183: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+42670587: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 4204233 nsec
+56152699: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+59688729: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 3530270 nsec
+59690823: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+80449242: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 20757828 nsec
+80459872: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+83996764: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 3536041 nsec
+84045386: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+88629386: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 4583770 nsec
+105382027: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+108998169: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 3609840 nsec
+109000904: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+131077172: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 22075837 nsec
+131083203: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+134639332: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 3555708 nsec
+134643339: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+138207193: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 3563122 nsec
+155195348: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+158773157: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 3566107 nsec
+158776213: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+181644247: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 22867393 nsec
+181663864: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+186070129: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 4404792 nsec
+186076471: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+190797650: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 4720798 nsec
+206012867: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+209552103: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 3532794 nsec
+209597359: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+231459753: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 21861964 nsec
+231464442: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+236122262: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 4657359 nsec
+236123224: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+240062646: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 3939162 nsec
+251607858: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+256166271: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 4553554 nsec
+256167162: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+276261235: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 20093662 nsec
+276264351: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+280840607: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 4575725 nsec
+280842140: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+285503778: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 4661348 nsec
+304725763: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+308329932: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 3594521 nsec
+308331335: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+330394288: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 22062492 nsec
+330401902: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+335495706: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 5093203 nsec
+335539028: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+340400422: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 4861174 nsec
+356644612: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+361187936: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 4535619 nsec
+361225677: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+383080748: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 21853998 nsec
+383086208: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+387235237: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 4148608 nsec
+387237822: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+392426254: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 5188162 nsec
+409124051: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+414118597: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 4986060 nsec
+414119469: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+435253818: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 21133978 nsec
+435259078: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+439160448: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 3900870 nsec
+439163975: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+443236329: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 4072024 nsec
+460447074: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+465146834: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 4694931 nsec
+465217117: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+486459509: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 21241811 nsec
+486465380: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+490094867: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 3628936 nsec
+490100648: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+494756966: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 4656017 nsec
+510098800: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+515097244: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 4991099 nsec
+515100400: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+537861342: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 22760531 nsec
+537868766: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+541682411: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 3812623 nsec
+541691859: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+545240833: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 3548684 nsec
+560830157: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+565254335: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 4417927 nsec
+565257451: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+588626562: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 23368600 nsec
+588633425: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+593343684: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 4644996 nsec
+593349384: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+596909771: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 3560236 nsec
+613318983: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+618052846: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 4728604 nsec
+618064919: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+642362183: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 24296803 nsec
+642368515: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+647220392: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 4851266 nsec
+647223007: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+650858606: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 3635108 nsec
+666925921: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+670841859: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 3905649 nsec
+670846759: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+691769558: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 20922278 nsec
+691774206: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+696325345: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 4550297 nsec
+696330374: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+699907061: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 3576147 nsec
+705374552: close a log Thu Jan 12 18:34:00 2023

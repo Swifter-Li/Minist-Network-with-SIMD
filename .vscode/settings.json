@@ -1,0 +1,17 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/lxj/Documents/parallel-distributed/21mnist/",
+            "binaryPath": "/home/lxj/Documents/parallel-distributed/21mnist/exe/mnist_cpu_base",
+            "binaryArgs": []
+        },
+        {
+            "cwd": "/home/lxj/Documents/parallel-distributed/21mnist/",
+            "binaryPath": "/home/lxj/Documents/parallel-distributed/21mnist/exe/mnist_cpu_simd",
+            "binaryArgs": []
+        },
+    ],
+    "files.associations": {
+        "random": "cpp"
+    }
+}

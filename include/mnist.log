@@ -1,0 +1,155 @@
+41078: open a log Fri Jan 13 17:08:44 2023
+46839: verbose=1
+47350: data-dir=data
+47620: lr=1.000000
+50996: epochs=14
+51227: batch-size=64
+51467: train-data-size=-1
+51748: test-data-size=4294967295
+52018: weight-seed=45678901234523
+52269: dropout-seed-1=56789012345234
+52459: dropout-seed-2=67890123452345
+52660: grad-dbg=0
+52910: algo=0
+53161: log=mnist.log
+55064: host=lxj-System
+55956: USER=lxj
+56357: PWD=/home/lxj/Documents/parallel-distributed/21mnist/include
+57228: SLURM_SUBMIT_DIR undefined
+57659: SLURM_SUBMIT_HOST undefined
+57980: SLURM_JOB_NAME undefined
+58270: SLURM_JOB_CPUS_PER_NODE undefined
+58501: SLURM_NTASKS undefined
+58741: SLURM_NPROCS undefined
+58982: SLURM_JOB_ID undefined
+59222: SLURM_JOBID undefined
+59462: SLURM_NNODES undefined
+59693: SLURM_JOB_NUM_NODES undefined
+60024: SLURM_NODELIST undefined
+60254: SLURM_JOB_PARTITION undefined
+60494: SLURM_TASKS_PER_NODE undefined
+60735: SLURM_JOB_NODELIST undefined
+60975: CUDA_VISIBLE_DEVICES undefined
+61336: GPU_DEVICE_ORDINAL undefined
+61586: SLURM_CPUS_ON_NODE undefined
+61817: SLURM_TASK_PID undefined
+62057: SLURM_NODEID undefined
+62298: SLURM_PROCID undefined
+62538: SLURM_LOCALID undefined
+62769: SLURM_JOB_UID undefined
+62999: SLURM_JOB_USER undefined
+63230: SLURM_JOB_GID undefined
+63460: SLURMD_NODENAME undefined
+765998: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+772400: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 5670 nsec
+772761: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+976206: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 203184 nsec
+976617: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+982488: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 5611 nsec
+982868: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+988639: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 5520 nsec
+1715614: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+1720102: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 3907 nsec
+1720423: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+1924749: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 204086 nsec
+1925110: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+1930500: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 5130 nsec
+1930831: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+1935640: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 4549 nsec
+2585519: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+2589817: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 3848 nsec
+2590137: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+2823979: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 210738 nsec
+2824440: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+2829871: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 5150 nsec
+2830181: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+2835141: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 4709 nsec
+3490991: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+3495439: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 3897 nsec
+3495710: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+3700176: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 204246 nsec
+3700537: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+3705777: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 4990 nsec
+3706138: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+3711027: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 4639 nsec
+4221883: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+4224859: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 2625 nsec
+4225039: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+4362048: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 136859 nsec
+4362298: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+4365935: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 3456 nsec
+4366166: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+4369472: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 3156 nsec
+4809434: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+4812390: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 2625 nsec
+4812590: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+4954558: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 141808 nsec
+4954839: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+4971731: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 3397 nsec
+4971991: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+4975257: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 3095 nsec
+5414829: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+5417884: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 2715 nsec
+5418115: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+5554954: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 136659 nsec
+5555184: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+5558811: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 3457 nsec
+5559051: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+5562388: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 3176 nsec
+6002320: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+6005245: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 2615 nsec
+6005436: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+6143096: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 137490 nsec
+6143366: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+6146863: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 3326 nsec
+6147083: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+6150350: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 3095 nsec
+6594219: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+6597215: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 2715 nsec
+6597405: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+6736798: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 139233 nsec
+6737129: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+6749763: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 12454 nsec
+6750034: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+6771234: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 3046 nsec
+7214812: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+7217908: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 2715 nsec
+7218119: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+7355218: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 136729 nsec
+7355448: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+7358995: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 3376 nsec
+7359225: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+7362522: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 3136 nsec
+7803165: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+7806121: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 2655 nsec
+7806321: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+7946456: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 139975 nsec
+7946686: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+7950313: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 3456 nsec
+7950544: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+7953770: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 3066 nsec
+8388612: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+8391588: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 2675 nsec
+8391768: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+8527204: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 135266 nsec
+8527445: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+8531071: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 3456 nsec
+8531282: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+8534498: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 3046 nsec
+8971194: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+8974179: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 2705 nsec
+8982245: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+9118172: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 135737 nsec
+9118452: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+9122099: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 3467 nsec
+9122319: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+9125586: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 3096 nsec
+9559887: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+9563003: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 2705 nsec
+9563203: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+9699781: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 136418 nsec
+9700022: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+9703569: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 3376 nsec
+9703779: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: starts
+9707035: tensor<real, N0, N1, N2, N3> &Relu<64, 2, 16, 16>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 2, N2 = 16, N3 = 16]: ends. took 3096 nsec
+9818666: close a log Fri Jan 13 17:08:44 2023

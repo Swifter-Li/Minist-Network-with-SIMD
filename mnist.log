@@ -1,0 +1,672 @@
+42761: open a log Fri Jan 13 17:22:44 2023
+49824: verbose=1
+50375: data-dir=data
+50886: lr=1.000000
+56717: epochs=14
+57098: batch-size=64
+57448: train-data-size=-1
+57829: test-data-size=4294967295
+58220: weight-seed=45678901234523
+58550: dropout-seed-1=56789012345234
+58851: dropout-seed-2=67890123452345
+59162: grad-dbg=0
+59512: algo=0
+59883: log=mnist.log
+62127: host=lxj-System
+63500: USER=lxj
+64061: PWD=/home/lxj/Documents/parallel-distributed/21mnist
+64662: SLURM_SUBMIT_DIR undefined
+65273: SLURM_SUBMIT_HOST undefined
+65714: SLURM_JOB_NAME undefined
+66115: SLURM_JOB_CPUS_PER_NODE undefined
+66465: SLURM_NTASKS undefined
+66826: SLURM_NPROCS undefined
+67147: SLURM_JOB_ID undefined
+67477: SLURM_JOBID undefined
+67808: SLURM_NNODES undefined
+68139: SLURM_JOB_NUM_NODES undefined
+68479: SLURM_NODELIST undefined
+68810: SLURM_JOB_PARTITION undefined
+69150: SLURM_TASKS_PER_NODE undefined
+69491: SLURM_JOB_NODELIST undefined
+69842: CUDA_VISIBLE_DEVICES undefined
+70323: GPU_DEVICE_ORDINAL undefined
+70663: SLURM_CPUS_ON_NODE undefined
+70994: SLURM_TASK_PID undefined
+71345: SLURM_NODEID undefined
+71685: SLURM_PROCID undefined
+72046: SLURM_LOCALID undefined
+72377: SLURM_JOB_UID undefined
+72697: SLURM_JOB_USER undefined
+73028: SLURM_JOB_GID undefined
+73358: SLURMD_NODENAME undefined
+73819: model building starts
+54560784: model building ends
+54578878: loading data from data
+500134326: use 60000 data items out of 60000
+502125550: loading data from data
+583061846: use 10000 data items out of 10000
+583518639: training starts
+583522457: Train Epoch 1 starts
+583801404: Train Epoch 1 batch 0 (samples 0 - 64) starts
+583803428: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+653632516: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 69827455 nsec
+653638007: tensor<real, N0, N1, N2, N3> &Relu<64, 32, 26, 26>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 32, N2 = 26, N3 = 26]: starts
+660574229: tensor<real, N0, N1, N2, N3> &Relu<64, 32, 26, 26>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 32, N2 = 26, N3 = 26]: ends. took 6935471 nsec
+660576383: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 32, 26, 26, 3, 64>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: starts
+2444668010: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 32, 26, 26, 3, 64>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: ends. took 1784091106 nsec
+2444672639: tensor<real, N0, N1, N2, N3> &Relu<64, 64, 24, 24>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 64, N2 = 24, N3 = 24]: starts
+2454369741: tensor<real, N0, N1, N2, N3> &Relu<64, 64, 24, 24>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 64, N2 = 24, N3 = 24]: ends. took 9696651 nsec
+2454372456: tensor<real, maxB, C, H / S, W / S> &MaxPooling2D<64, 64, 24, 24, 2>::forward(tensor<real, maxB, C, H, W> &, int) [maxB = 64, C = 64, H = 24, W = 24, S = 2]: starts
+2474073369: tensor<real, maxB, C, H / S, W / S> &MaxPooling2D<64, 64, 24, 24, 2>::forward(tensor<real, maxB, C, H, W> &, int) [maxB = 64, C = 64, H = 24, W = 24, S = 2]: ends. took 19700423 nsec
+2474074672: tensor<real, N0, N1, N2, N3> &Dropout<64, 64, 12, 12>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 64, N2 = 12, N3 = 12]: starts
+2484079586: tensor<real, N0, N1, N2, N3> &Dropout<64, 64, 12, 12>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 64, N2 = 12, N3 = 12]: ends. took 10004703 nsec
+2484080006: tensor<real, M, N> &Linear<64, 128, 64, 12, 12>::forward(tensor<real, M, K0, K1, K2> &, int) [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: starts
+2970479127: tensor<real, M, N> &Linear<64, 128, 64, 12, 12>::forward(tensor<real, M, K0, K1, K2> &, int) [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: ends. took 486398669 nsec
+2970515756: tensor<real, N0, N1, N2, N3> &Relu<64, 128, 1, 1>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: starts
+2970940088: tensor<real, N0, N1, N2, N3> &Relu<64, 128, 1, 1>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: ends. took 423992 nsec
+2970940719: tensor<real, N0, N1, N2, N3> &Dropout<64, 128, 1, 1>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: starts
+2971100030: tensor<real, N0, N1, N2, N3> &Dropout<64, 128, 1, 1>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: ends. took 159120 nsec
+2971100792: tensor<real, M, N> &Linear<64, 10, 128, 1, 1>::forward(tensor<real, M, K0, K1, K2> &, int) [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: starts
+2971662324: tensor<real, M, N> &Linear<64, 10, 128, 1, 1>::forward(tensor<real, M, K0, K1, K2> &, int) [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: ends. took 561221 nsec
+2971662764: tensor<real, maxB> &NLLSoftmax<64, 10>::forward(tensor<real, maxB, nC> &, tensor<idx_t, maxB> &, int) [maxB = 64, nC = 10]: starts
+2971696067: tensor<real, maxB> &NLLSoftmax<64, 10>::forward(tensor<real, maxB, nC> &, tensor<idx_t, maxB> &, int) [maxB = 64, nC = 10]: ends. took 32722 nsec
+2971697450: tensor<real, maxB, nC> &NLLSoftmax<64, 10>::backward(tensor<real, maxB> &, tensor<idx_t, maxB> &) [maxB = 64, nC = 10]: starts
+2971708270: tensor<real, maxB, nC> &NLLSoftmax<64, 10>::backward(tensor<real, maxB> &, tensor<idx_t, maxB> &) [maxB = 64, nC = 10]: ends. took 10620 nsec
+2971708501: tensor<real, M, K0, K1, K2> &Linear<64, 10, 128, 1, 1>::backward(tensor<real, M, N> &) [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: starts
+2972628771: tensor<real, M, K0, K1, K2> &Linear<64, 10, 128, 1, 1>::backward(tensor<real, M, N> &) [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: ends. took 920050 nsec
+2972629031: tensor<real, N0, N1, N2, N3> &Dropout<64, 128, 1, 1>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: starts
+2972799203: tensor<real, N0, N1, N2, N3> &Dropout<64, 128, 1, 1>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: ends. took 169972 nsec
+2972799413: tensor<real, N0, N1, N2, N3> &Relu<64, 128, 1, 1>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: starts
+2972917446: tensor<real, N0, N1, N2, N3> &Relu<64, 128, 1, 1>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: ends. took 117832 nsec
+2972917687: tensor<real, M, K0, K1, K2> &Linear<64, 128, 64, 12, 12>::backward(tensor<real, M, N> &) [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: starts
+3849696539: tensor<real, M, K0, K1, K2> &Linear<64, 128, 64, 12, 12>::backward(tensor<real, M, N> &) [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: ends. took 876778101 nsec
+3849700667: tensor<real, N0, N1, N2, N3> &Dropout<64, 64, 12, 12>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 64, N2 = 12, N3 = 12]: starts
+3859660465: tensor<real, N0, N1, N2, N3> &Dropout<64, 64, 12, 12>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 64, N2 = 12, N3 = 12]: ends. took 9959307 nsec
+3859662278: tensor<real, maxB, C, H, W> &MaxPooling2D<64, 64, 24, 24, 2>::backward(tensor<real, maxB, C, H / S, W / S> &) [maxB = 64, C = 64, H = 24, W = 24, S = 2]: starts
+3876733340: tensor<real, maxB, C, H, W> &MaxPooling2D<64, 64, 24, 24, 2>::backward(tensor<real, maxB, C, H / S, W / S> &) [maxB = 64, C = 64, H = 24, W = 24, S = 2]: ends. took 17070602 nsec
+3876736376: tensor<real, N0, N1, N2, N3> &Relu<64, 64, 24, 24>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 64, N2 = 24, N3 = 24]: starts
+3896023236: tensor<real, N0, N1, N2, N3> &Relu<64, 64, 24, 24>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 64, N2 = 24, N3 = 24]: ends. took 19286309 nsec
+3896026663: tensor<real, maxB, IC, H, W> &Convolution2D<64, 32, 26, 26, 3, 64>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: starts
+13009987561: tensor<real, maxB, IC, H, W> &Convolution2D<64, 32, 26, 26, 3, 64>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: ends. took 9113960268 nsec
+13010017778: tensor<real, N0, N1, N2, N3> &Relu<64, 32, 26, 26>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 32, N2 = 26, N3 = 26]: starts
+13020795453: tensor<real, N0, N1, N2, N3> &Relu<64, 32, 26, 26>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 32, N2 = 26, N3 = 26]: ends. took 10776944 nsec
+13020798228: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+13181509824: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 160710855 nsec
+13181512890: void Convolution2D<64, 1, 28, 28, 3, 32>::update() [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+13181537987: void Convolution2D<64, 1, 28, 28, 3, 32>::update() [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 24657 nsec
+13181538248: void Convolution2D<64, 32, 26, 26, 3, 64>::update() [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: starts
+13182785185: void Convolution2D<64, 32, 26, 26, 3, 64>::update() [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: ends. took 1246537 nsec
+13182785916: void Linear<64, 128, 64, 12, 12>::update() [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: starts
+13260570103: void Linear<64, 128, 64, 12, 12>::update() [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: ends. took 77783696 nsec
+13260573259: void Linear<64, 10, 128, 1, 1>::update() [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: starts
+13260659212: void Linear<64, 10, 128, 1, 1>::update() [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: ends. took 85632 nsec
+13260667447: sample 0 image 0 pred 6 truth 5
+13260668229: sample 1 image 1 pred 6 truth 0
+13260668610: sample 2 image 2 pred 6 truth 4
+13260668890: sample 3 image 3 pred 8 truth 1
+13260669151: sample 4 image 4 pred 5 truth 9
+13260669401: sample 5 image 5 pred 6 truth 2
+13260669641: sample 6 image 6 pred 6 truth 1
+13260669882: sample 7 image 7 pred 6 truth 3
+13260670122: sample 8 image 8 pred 6 truth 1
+13260670463: sample 9 image 9 pred 6 truth 4
+13260670794: sample 10 image 10 pred 5 truth 3
+13260671084: sample 11 image 11 pred 6 truth 5
+13260671355: sample 12 image 12 pred 6 truth 3
+13260671605: sample 13 image 13 pred 6 truth 6
+13260671856: sample 14 image 14 pred 6 truth 1
+13260672106: sample 15 image 15 pred 5 truth 7
+13260672357: sample 16 image 16 pred 5 truth 2
+13260672587: sample 17 image 17 pred 6 truth 8
+13260672828: sample 18 image 18 pred 6 truth 6
+13260673088: sample 19 image 19 pred 6 truth 9
+13260673328: sample 20 image 20 pred 5 truth 4
+13260673569: sample 21 image 21 pred 6 truth 0
+13260673809: sample 22 image 22 pred 6 truth 9
+13260674060: sample 23 image 23 pred 6 truth 1
+13260674300: sample 24 image 24 pred 6 truth 1
+13260674541: sample 25 image 25 pred 6 truth 2
+13260674881: sample 26 image 26 pred 6 truth 4
+13260675122: sample 27 image 27 pred 6 truth 3
+13260675362: sample 28 image 28 pred 5 truth 2
+13260675603: sample 29 image 29 pred 8 truth 7
+13260675843: sample 30 image 30 pred 6 truth 3
+13260676084: sample 31 image 31 pred 4 truth 8
+13260676314: sample 32 image 32 pred 6 truth 6
+13260676565: sample 33 image 33 pred 5 truth 9
+13260676805: sample 34 image 34 pred 4 truth 0
+13260677055: sample 35 image 35 pred 6 truth 5
+13260677296: sample 36 image 36 pred 6 truth 6
+13260677546: sample 37 image 37 pred 6 truth 0
+13260677787: sample 38 image 38 pred 6 truth 7
+13260678027: sample 39 image 39 pred 6 truth 6
+13260678278: sample 40 image 40 pred 6 truth 1
+13260678518: sample 41 image 41 pred 6 truth 8
+13260678759: sample 42 image 42 pred 6 truth 7
+13260678999: sample 43 image 43 pred 6 truth 9
+13260679240: sample 44 image 44 pred 6 truth 3
+13260679480: sample 45 image 45 pred 6 truth 9
+13260679721: sample 46 image 46 pred 6 truth 8
+13260716109: sample 47 image 47 pred 6 truth 5
+13260716450: sample 48 image 48 pred 6 truth 9
+13260716771: sample 49 image 49 pred 6 truth 3
+13260717101: sample 50 image 50 pred 6 truth 3
+13260717442: sample 51 image 51 pred 6 truth 0
+13260717772: sample 52 image 52 pred 6 truth 7
+13260718093: sample 53 image 53 pred 6 truth 4
+13260718414: sample 54 image 54 pred 6 truth 9
+13260718744: sample 55 image 55 pred 5 truth 8
+13260719085: sample 56 image 56 pred 6 truth 0
+13260719426: sample 57 image 57 pred 6 truth 9
+13260719776: sample 58 image 58 pred 4 truth 4
+13260720087: sample 59 image 59 pred 6 truth 1
+13260720397: sample 60 image 60 pred 4 truth 4
+13260720708: sample 61 image 61 pred 6 truth 4
+13260721129: sample 62 image 62 pred 6 truth 6
+13260721429: sample 63 image 63 pred 6 truth 0
+13260721740: Train Epoch: 1 [0/60000 (0%)]	Loss: 2.311285
+13260742860: Train Epoch 1 batch 0 (samples 0 - 64) ends
+13261026757: Train Epoch 1 batch 1 (samples 64 - 128) starts
+13261028219: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+13325629995: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 64601175 nsec
+13325636087: tensor<real, N0, N1, N2, N3> &Relu<64, 32, 26, 26>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 32, N2 = 26, N3 = 26]: starts
+13339023054: tensor<real, N0, N1, N2, N3> &Relu<64, 32, 26, 26>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 32, N2 = 26, N3 = 26]: ends. took 13386375 nsec
+13339024436: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 32, 26, 26, 3, 64>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: starts
+15073535970: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 32, 26, 26, 3, 64>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: ends. took 1734510853 nsec
+15073540900: tensor<real, N0, N1, N2, N3> &Relu<64, 64, 24, 24>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 64, N2 = 24, N3 = 24]: starts
+15090271197: tensor<real, N0, N1, N2, N3> &Relu<64, 64, 24, 24>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 64, N2 = 24, N3 = 24]: ends. took 16729837 nsec
+15090272840: tensor<real, maxB, C, H / S, W / S> &MaxPooling2D<64, 64, 24, 24, 2>::forward(tensor<real, maxB, C, H, W> &, int) [maxB = 64, C = 64, H = 24, W = 24, S = 2]: starts
+15108933648: tensor<real, maxB, C, H / S, W / S> &MaxPooling2D<64, 64, 24, 24, 2>::forward(tensor<real, maxB, C, H, W> &, int) [maxB = 64, C = 64, H = 24, W = 24, S = 2]: ends. took 18660366 nsec
+15108935291: tensor<real, N0, N1, N2, N3> &Dropout<64, 64, 12, 12>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 64, N2 = 12, N3 = 12]: starts
+15118746178: tensor<real, N0, N1, N2, N3> &Dropout<64, 64, 12, 12>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 64, N2 = 12, N3 = 12]: ends. took 9810617 nsec
+15118746719: tensor<real, M, N> &Linear<64, 128, 64, 12, 12>::forward(tensor<real, M, K0, K1, K2> &, int) [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: starts
+15594191990: tensor<real, M, N> &Linear<64, 128, 64, 12, 12>::forward(tensor<real, M, K0, K1, K2> &, int) [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: ends. took 475444831 nsec
+15594196288: tensor<real, N0, N1, N2, N3> &Relu<64, 128, 1, 1>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: starts
+15594776986: tensor<real, N0, N1, N2, N3> &Relu<64, 128, 1, 1>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: ends. took 580407 nsec
+15594777587: tensor<real, N0, N1, N2, N3> &Dropout<64, 128, 1, 1>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: starts
+15594933512: tensor<real, N0, N1, N2, N3> &Dropout<64, 128, 1, 1>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: ends. took 155734 nsec
+15594965633: tensor<real, M, N> &Linear<64, 10, 128, 1, 1>::forward(tensor<real, M, K0, K1, K2> &, int) [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: starts
+15595548044: tensor<real, M, N> &Linear<64, 10, 128, 1, 1>::forward(tensor<real, M, K0, K1, K2> &, int) [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: ends. took 582071 nsec
+15595549026: tensor<real, maxB> &NLLSoftmax<64, 10>::forward(tensor<real, maxB, nC> &, tensor<idx_t, maxB> &, int) [maxB = 64, nC = 10]: starts
+15595568623: tensor<real, maxB> &NLLSoftmax<64, 10>::forward(tensor<real, maxB, nC> &, tensor<idx_t, maxB> &, int) [maxB = 64, nC = 10]: ends. took 19267 nsec
+15595569795: tensor<real, maxB, nC> &NLLSoftmax<64, 10>::backward(tensor<real, maxB> &, tensor<idx_t, maxB> &) [maxB = 64, nC = 10]: starts
+15595580445: tensor<real, maxB, nC> &NLLSoftmax<64, 10>::backward(tensor<real, maxB> &, tensor<idx_t, maxB> &) [maxB = 64, nC = 10]: ends. took 10450 nsec
+15595580676: tensor<real, M, K0, K1, K2> &Linear<64, 10, 128, 1, 1>::backward(tensor<real, M, N> &) [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: starts
+15596497820: tensor<real, M, K0, K1, K2> &Linear<64, 10, 128, 1, 1>::backward(tensor<real, M, N> &) [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: ends. took 916913 nsec
+15596498210: tensor<real, N0, N1, N2, N3> &Dropout<64, 128, 1, 1>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: starts
+15596663312: tensor<real, N0, N1, N2, N3> &Dropout<64, 128, 1, 1>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: ends. took 164901 nsec
+15596663563: tensor<real, N0, N1, N2, N3> &Relu<64, 128, 1, 1>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: starts
+15596759825: tensor<real, N0, N1, N2, N3> &Relu<64, 128, 1, 1>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: ends. took 96082 nsec
+15596760045: tensor<real, M, K0, K1, K2> &Linear<64, 128, 64, 12, 12>::backward(tensor<real, M, N> &) [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: starts
+16451118080: tensor<real, M, K0, K1, K2> &Linear<64, 128, 64, 12, 12>::backward(tensor<real, M, N> &) [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: ends. took 854357353 nsec
+16451122879: tensor<real, N0, N1, N2, N3> &Dropout<64, 64, 12, 12>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 64, N2 = 12, N3 = 12]: starts
+16460917415: tensor<real, N0, N1, N2, N3> &Dropout<64, 64, 12, 12>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 64, N2 = 12, N3 = 12]: ends. took 9794136 nsec
+16460919068: tensor<real, maxB, C, H, W> &MaxPooling2D<64, 64, 24, 24, 2>::backward(tensor<real, maxB, C, H / S, W / S> &) [maxB = 64, C = 64, H = 24, W = 24, S = 2]: starts
+16479319473: tensor<real, maxB, C, H, W> &MaxPooling2D<64, 64, 24, 24, 2>::backward(tensor<real, maxB, C, H / S, W / S> &) [maxB = 64, C = 64, H = 24, W = 24, S = 2]: ends. took 18399873 nsec
+16479321456: tensor<real, N0, N1, N2, N3> &Relu<64, 64, 24, 24>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 64, N2 = 24, N3 = 24]: starts
+16498233789: tensor<real, N0, N1, N2, N3> &Relu<64, 64, 24, 24>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 64, N2 = 24, N3 = 24]: ends. took 18911812 nsec
+16498235933: tensor<real, maxB, IC, H, W> &Convolution2D<64, 32, 26, 26, 3, 64>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: starts
+25162765886: tensor<real, maxB, IC, H, W> &Convolution2D<64, 32, 26, 26, 3, 64>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: ends. took 8664528961 nsec
+25162769693: tensor<real, N0, N1, N2, N3> &Relu<64, 32, 26, 26>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 32, N2 = 26, N3 = 26]: starts
+25173341910: tensor<real, N0, N1, N2, N3> &Relu<64, 32, 26, 26>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 32, N2 = 26, N3 = 26]: ends. took 10571595 nsec
+25173345486: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+25332899634: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 159517418 nsec
+25332903611: void Convolution2D<64, 1, 28, 28, 3, 32>::update() [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+25332929059: void Convolution2D<64, 1, 28, 28, 3, 32>::update() [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 25067 nsec
+25332929330: void Convolution2D<64, 32, 26, 26, 3, 64>::update() [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: starts
+25334161790: void Convolution2D<64, 32, 26, 26, 3, 64>::update() [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: ends. took 1232049 nsec
+25334162431: void Linear<64, 128, 64, 12, 12>::update() [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: starts
+25412131166: void Linear<64, 128, 64, 12, 12>::update() [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: ends. took 77968134 nsec
+25412135745: void Linear<64, 10, 128, 1, 1>::update() [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: starts
+25412270600: void Linear<64, 10, 128, 1, 1>::update() [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: ends. took 134374 nsec
+25412280118: sample 64 image 64 pred 4 truth 4
+25412281039: sample 65 image 65 pred 4 truth 5
+25412281510: sample 66 image 66 pred 1 truth 6
+25412281861: sample 67 image 67 pred 1 truth 1
+25412282332: sample 68 image 68 pred 1 truth 0
+25412282793: sample 69 image 69 pred 4 truth 0
+25412283133: sample 70 image 70 pred 1 truth 1
+25412283484: sample 71 image 71 pred 1 truth 7
+25412283775: sample 72 image 72 pred 4 truth 1
+25412284055: sample 73 image 73 pred 1 truth 6
+25412284436: sample 74 image 74 pred 4 truth 3
+25412284726: sample 75 image 75 pred 4 truth 0
+25412285097: sample 76 image 76 pred 1 truth 2
+25412285408: sample 77 image 77 pred 4 truth 1
+25412285758: sample 78 image 78 pred 4 truth 1
+25412286119: sample 79 image 79 pred 4 truth 7
+25412286450: sample 80 image 80 pred 4 truth 9
+25412286800: sample 81 image 81 pred 4 truth 0
+25412287091: sample 82 image 82 pred 9 truth 2
+25412287371: sample 83 image 83 pred 4 truth 6
+25412287662: sample 84 image 84 pred 4 truth 7
+25412287942: sample 85 image 85 pred 4 truth 8
+25412288223: sample 86 image 86 pred 4 truth 3
+25412288503: sample 87 image 87 pred 9 truth 9
+25412288804: sample 88 image 88 pred 6 truth 0
+25412289085: sample 89 image 89 pred 4 truth 4
+25412289495: sample 90 image 90 pred 4 truth 6
+25412289806: sample 91 image 91 pred 4 truth 7
+25412290107: sample 92 image 92 pred 4 truth 4
+25412290437: sample 93 image 93 pred 4 truth 6
+25412290748: sample 94 image 94 pred 4 truth 8
+25412291068: sample 95 image 95 pred 4 truth 0
+25412291439: sample 96 image 96 pred 5 truth 7
+25412291750: sample 97 image 97 pred 4 truth 8
+25412292040: sample 98 image 98 pred 6 truth 3
+25412292371: sample 99 image 99 pred 1 truth 1
+25412292661: sample 100 image 100 pred 4 truth 5
+25412293022: sample 101 image 101 pred 4 truth 7
+25412293343: sample 102 image 102 pred 4 truth 1
+25412293673: sample 103 image 103 pred 0 truth 7
+25412294014: sample 104 image 104 pred 9 truth 1
+25412294335: sample 105 image 105 pred 4 truth 1
+25412294635: sample 106 image 106 pred 9 truth 6
+25412295006: sample 107 image 107 pred 4 truth 3
+25412295316: sample 108 image 108 pred 4 truth 0
+25412295647: sample 109 image 109 pred 4 truth 2
+25412295998: sample 110 image 110 pred 4 truth 9
+25412296298: sample 111 image 111 pred 9 truth 3
+25412296609: sample 112 image 112 pred 4 truth 1
+25412296929: sample 113 image 113 pred 4 truth 1
+25412297230: sample 114 image 114 pred 4 truth 0
+25412297561: sample 115 image 115 pred 4 truth 4
+25412297911: sample 116 image 116 pred 1 truth 9
+25412298252: sample 117 image 117 pred 4 truth 2
+25412298532: sample 118 image 118 pred 4 truth 0
+25412298853: sample 119 image 119 pred 1 truth 0
+25412299164: sample 120 image 120 pred 9 truth 2
+25412299464: sample 121 image 121 pred 4 truth 0
+25412342616: sample 122 image 122 pred 1 truth 2
+25412343067: sample 123 image 123 pred 1 truth 7
+25412343357: sample 124 image 124 pred 4 truth 1
+25412343668: sample 125 image 125 pred 1 truth 8
+25412344008: sample 126 image 126 pred 4 truth 6
+25412344349: sample 127 image 127 pred 4 truth 4
+25412344720: Train Epoch 1 batch 1 (samples 64 - 128) ends
+25412723686: Train Epoch 1 batch 2 (samples 128 - 192) starts
+25412725299: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+25476502406: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 63776206 nsec
+25476507245: tensor<real, N0, N1, N2, N3> &Relu<64, 32, 26, 26>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 32, N2 = 26, N3 = 26]: starts
+25486175392: tensor<real, N0, N1, N2, N3> &Relu<64, 32, 26, 26>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 32, N2 = 26, N3 = 26]: ends. took 9667736 nsec
+25486176615: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 32, 26, 26, 3, 64>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: starts
+27213895564: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 32, 26, 26, 3, 64>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: ends. took 1727718278 nsec
+27213899982: tensor<real, N0, N1, N2, N3> &Relu<64, 64, 24, 24>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 64, N2 = 24, N3 = 24]: starts
+27227217437: tensor<real, N0, N1, N2, N3> &Relu<64, 64, 24, 24>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 64, N2 = 24, N3 = 24]: ends. took 13317064 nsec
+27227219261: tensor<real, maxB, C, H / S, W / S> &MaxPooling2D<64, 64, 24, 24, 2>::forward(tensor<real, maxB, C, H, W> &, int) [maxB = 64, C = 64, H = 24, W = 24, S = 2]: starts
+27249863028: tensor<real, maxB, C, H / S, W / S> &MaxPooling2D<64, 64, 24, 24, 2>::forward(tensor<real, maxB, C, H, W> &, int) [maxB = 64, C = 64, H = 24, W = 24, S = 2]: ends. took 22642995 nsec
+27249866274: tensor<real, N0, N1, N2, N3> &Dropout<64, 64, 12, 12>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 64, N2 = 12, N3 = 12]: starts
+27259723578: tensor<real, N0, N1, N2, N3> &Dropout<64, 64, 12, 12>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 64, N2 = 12, N3 = 12]: ends. took 9856933 nsec
+27259724200: tensor<real, M, N> &Linear<64, 128, 64, 12, 12>::forward(tensor<real, M, K0, K1, K2> &, int) [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: starts
+27740727728: tensor<real, M, N> &Linear<64, 128, 64, 12, 12>::forward(tensor<real, M, K0, K1, K2> &, int) [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: ends. took 481003038 nsec
+27740731876: tensor<real, N0, N1, N2, N3> &Relu<64, 128, 1, 1>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: starts
+27741302234: tensor<real, N0, N1, N2, N3> &Relu<64, 128, 1, 1>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: ends. took 569957 nsec
+27741302815: tensor<real, N0, N1, N2, N3> &Dropout<64, 128, 1, 1>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: starts
+27741458119: tensor<real, N0, N1, N2, N3> &Dropout<64, 128, 1, 1>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: ends. took 155013 nsec
+27741458460: tensor<real, M, N> &Linear<64, 10, 128, 1, 1>::forward(tensor<real, M, K0, K1, K2> &, int) [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: starts
+27742010273: tensor<real, M, N> &Linear<64, 10, 128, 1, 1>::forward(tensor<real, M, K0, K1, K2> &, int) [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: ends. took 551503 nsec
+27742010724: tensor<real, maxB> &NLLSoftmax<64, 10>::forward(tensor<real, maxB, nC> &, tensor<idx_t, maxB> &, int) [maxB = 64, nC = 10]: starts
+27742061980: tensor<real, maxB> &NLLSoftmax<64, 10>::forward(tensor<real, maxB, nC> &, tensor<idx_t, maxB> &, int) [maxB = 64, nC = 10]: ends. took 28644 nsec
+27742063674: tensor<real, maxB, nC> &NLLSoftmax<64, 10>::backward(tensor<real, maxB> &, tensor<idx_t, maxB> &) [maxB = 64, nC = 10]: starts
+27742077430: tensor<real, maxB, nC> &NLLSoftmax<64, 10>::backward(tensor<real, maxB> &, tensor<idx_t, maxB> &) [maxB = 64, nC = 10]: ends. took 13376 nsec
+27742077740: tensor<real, M, K0, K1, K2> &Linear<64, 10, 128, 1, 1>::backward(tensor<real, M, N> &) [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: starts
+27743088741: tensor<real, M, K0, K1, K2> &Linear<64, 10, 128, 1, 1>::backward(tensor<real, M, N> &) [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: ends. took 1010760 nsec
+27743089312: tensor<real, N0, N1, N2, N3> &Dropout<64, 128, 1, 1>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: starts
+27743253252: tensor<real, N0, N1, N2, N3> &Dropout<64, 128, 1, 1>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: ends. took 163609 nsec
+27743253493: tensor<real, N0, N1, N2, N3> &Relu<64, 128, 1, 1>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: starts
+27743343463: tensor<real, N0, N1, N2, N3> &Relu<64, 128, 1, 1>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: ends. took 89770 nsec
+27743343703: tensor<real, M, K0, K1, K2> &Linear<64, 128, 64, 12, 12>::backward(tensor<real, M, N> &) [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: starts
+28593902323: tensor<real, M, K0, K1, K2> &Linear<64, 128, 64, 12, 12>::backward(tensor<real, M, N> &) [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: ends. took 850557898 nsec
+28593906791: tensor<real, N0, N1, N2, N3> &Dropout<64, 64, 12, 12>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 64, N2 = 12, N3 = 12]: starts
+28603801166: tensor<real, N0, N1, N2, N3> &Dropout<64, 64, 12, 12>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 64, N2 = 12, N3 = 12]: ends. took 9893944 nsec
+28603803060: tensor<real, maxB, C, H, W> &MaxPooling2D<64, 64, 24, 24, 2>::backward(tensor<real, maxB, C, H / S, W / S> &) [maxB = 64, C = 64, H = 24, W = 24, S = 2]: starts
+28622252878: tensor<real, maxB, C, H, W> &MaxPooling2D<64, 64, 24, 24, 2>::backward(tensor<real, maxB, C, H / S, W / S> &) [maxB = 64, C = 64, H = 24, W = 24, S = 2]: ends. took 18449387 nsec
+28622254671: tensor<real, N0, N1, N2, N3> &Relu<64, 64, 24, 24>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 64, N2 = 24, N3 = 24]: starts
+28640062226: tensor<real, N0, N1, N2, N3> &Relu<64, 64, 24, 24>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 64, N2 = 24, N3 = 24]: ends. took 17807133 nsec
+28640064911: tensor<real, maxB, IC, H, W> &Convolution2D<64, 32, 26, 26, 3, 64>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: starts
+37520747435: tensor<real, maxB, IC, H, W> &Convolution2D<64, 32, 26, 26, 3, 64>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: ends. took 8880681673 nsec
+37520751774: tensor<real, N0, N1, N2, N3> &Relu<64, 32, 26, 26>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 32, N2 = 26, N3 = 26]: starts
+37531164158: tensor<real, N0, N1, N2, N3> &Relu<64, 32, 26, 26>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 32, N2 = 26, N3 = 26]: ends. took 10411703 nsec
+37531166201: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+37691584803: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 160417981 nsec
+37691586697: void Convolution2D<64, 1, 28, 28, 3, 32>::update() [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+37691611634: void Convolution2D<64, 1, 28, 28, 3, 32>::update() [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 24376 nsec
+37691647111: void Convolution2D<64, 32, 26, 26, 3, 64>::update() [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: starts
+37692866937: void Convolution2D<64, 32, 26, 26, 3, 64>::update() [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: ends. took 1219215 nsec
+37692867568: void Linear<64, 128, 64, 12, 12>::update() [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: starts
+37769629191: void Linear<64, 128, 64, 12, 12>::update() [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: ends. took 76761092 nsec
+37769633209: void Linear<64, 10, 128, 1, 1>::update() [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: starts
+37769718330: void Linear<64, 10, 128, 1, 1>::update() [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: ends. took 84791 nsec
+37769724391: sample 128 image 128 pred 1 truth 1
+37769724992: sample 129 image 129 pred 6 truth 6
+37769725353: sample 130 image 130 pred 0 truth 3
+37769725784: sample 131 image 131 pred 7 truth 4
+37769726054: sample 132 image 132 pred 1 truth 5
+37769726365: sample 133 image 133 pred 1 truth 9
+37769726615: sample 134 image 134 pred 2 truth 1
+37769726856: sample 135 image 135 pred 2 truth 3
+37769727096: sample 136 image 136 pred 7 truth 3
+37769727337: sample 137 image 137 pred 1 truth 8
+37769727677: sample 138 image 138 pred 6 truth 5
+37769727928: sample 139 image 139 pred 0 truth 4
+37769728228: sample 140 image 140 pred 7 truth 7
+37769728479: sample 141 image 141 pred 0 truth 7
+37769728739: sample 142 image 142 pred 0 truth 4
+37769728980: sample 143 image 143 pred 1 truth 2
+37769729230: sample 144 image 144 pred 0 truth 8
+37769729481: sample 145 image 145 pred 7 truth 5
+37769729721: sample 146 image 146 pred 2 truth 8
+37769729972: sample 147 image 147 pred 6 truth 6
+37769730222: sample 148 image 148 pred 1 truth 7
+37769730463: sample 149 image 149 pred 0 truth 3
+37769730713: sample 150 image 150 pred 1 truth 4
+37769730953: sample 151 image 151 pred 6 truth 6
+37769731204: sample 152 image 152 pred 0 truth 1
+37769731454: sample 153 image 153 pred 1 truth 9
+37769731795: sample 154 image 154 pred 7 truth 9
+37769732035: sample 155 image 155 pred 6 truth 6
+37769732286: sample 156 image 156 pred 0 truth 0
+37769732566: sample 157 image 157 pred 0 truth 3
+37769732817: sample 158 image 158 pred 0 truth 7
+37769733067: sample 159 image 159 pred 0 truth 2
+37769733308: sample 160 image 160 pred 0 truth 8
+37769733558: sample 161 image 161 pred 0 truth 2
+37769733799: sample 162 image 162 pred 0 truth 9
+37769734039: sample 163 image 163 pred 0 truth 4
+37769734280: sample 164 image 164 pred 3 truth 4
+37769734530: sample 165 image 165 pred 0 truth 6
+37769734781: sample 166 image 166 pred 1 truth 4
+37769735021: sample 167 image 167 pred 0 truth 9
+37769735272: sample 168 image 168 pred 1 truth 7
+37769735522: sample 169 image 169 pred 6 truth 0
+37769735793: sample 170 image 170 pred 7 truth 9
+37769736043: sample 171 image 171 pred 0 truth 2
+37769736284: sample 172 image 172 pred 0 truth 9
+37769736534: sample 173 image 173 pred 1 truth 5
+37769736784: sample 174 image 174 pred 1 truth 1
+37769737045: sample 175 image 175 pred 0 truth 5
+37769737285: sample 176 image 176 pred 1 truth 9
+37769737536: sample 177 image 177 pred 1 truth 1
+37769737796: sample 178 image 178 pred 0 truth 2
+37769738047: sample 179 image 179 pred 0 truth 3
+37769738287: sample 180 image 180 pred 1 truth 2
+37769738538: sample 181 image 181 pred 1 truth 3
+37769738788: sample 182 image 182 pred 0 truth 5
+37769739039: sample 183 image 183 pred 1 truth 9
+37769739289: sample 184 image 184 pred 1 truth 1
+37769739550: sample 185 image 185 pred 0 truth 7
+37769739800: sample 186 image 186 pred 1 truth 6
+37769740041: sample 187 image 187 pred 0 truth 2
+37769740281: sample 188 image 188 pred 0 truth 8
+37769740532: sample 189 image 189 pred 6 truth 2
+37769740782: sample 190 image 190 pred 0 truth 2
+37769741032: sample 191 image 191 pred 6 truth 5
+37769741293: Train Epoch 1 batch 2 (samples 128 - 192) ends
+37769995794: Train Epoch 1 batch 3 (samples 192 - 256) starts
+37769996646: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+37825828472: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 55799095 nsec
+37825832179: tensor<real, N0, N1, N2, N3> &Relu<64, 32, 26, 26>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 32, N2 = 26, N3 = 26]: starts
+37835774004: tensor<real, N0, N1, N2, N3> &Relu<64, 32, 26, 26>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 32, N2 = 26, N3 = 26]: ends. took 9941374 nsec
+37835775707: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 32, 26, 26, 3, 64>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: starts
+39578711719: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 32, 26, 26, 3, 64>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: ends. took 1742935431 nsec
+39578716147: tensor<real, N0, N1, N2, N3> &Relu<64, 64, 24, 24>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 64, N2 = 24, N3 = 24]: starts
+39592004468: tensor<real, N0, N1, N2, N3> &Relu<64, 64, 24, 24>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 64, N2 = 24, N3 = 24]: ends. took 13287739 nsec
+39592006331: tensor<real, maxB, C, H / S, W / S> &MaxPooling2D<64, 64, 24, 24, 2>::forward(tensor<real, maxB, C, H, W> &, int) [maxB = 64, C = 64, H = 24, W = 24, S = 2]: starts
+39613712415: tensor<real, maxB, C, H / S, W / S> &MaxPooling2D<64, 64, 24, 24, 2>::forward(tensor<real, maxB, C, H, W> &, int) [maxB = 64, C = 64, H = 24, W = 24, S = 2]: ends. took 21705353 nsec
+39613716453: tensor<real, N0, N1, N2, N3> &Dropout<64, 64, 12, 12>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 64, N2 = 12, N3 = 12]: starts
+39625478228: tensor<real, N0, N1, N2, N3> &Dropout<64, 64, 12, 12>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 64, N2 = 12, N3 = 12]: ends. took 11761163 nsec
+39625479119: tensor<real, M, N> &Linear<64, 128, 64, 12, 12>::forward(tensor<real, M, K0, K1, K2> &, int) [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: starts
+40061769038: tensor<real, M, N> &Linear<64, 128, 64, 12, 12>::forward(tensor<real, M, K0, K1, K2> &, int) [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: ends. took 436289427 nsec
+40061773867: tensor<real, N0, N1, N2, N3> &Relu<64, 128, 1, 1>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: starts
+40062385113: tensor<real, N0, N1, N2, N3> &Relu<64, 128, 1, 1>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: ends. took 610925 nsec
+40062385714: tensor<real, N0, N1, N2, N3> &Dropout<64, 128, 1, 1>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: starts
+40062547410: tensor<real, N0, N1, N2, N3> &Dropout<64, 128, 1, 1>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: ends. took 161476 nsec
+40062547880: tensor<real, M, N> &Linear<64, 10, 128, 1, 1>::forward(tensor<real, M, K0, K1, K2> &, int) [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: starts
+40063110614: tensor<real, M, N> &Linear<64, 10, 128, 1, 1>::forward(tensor<real, M, K0, K1, K2> &, int) [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: ends. took 562413 nsec
+40063111215: tensor<real, maxB> &NLLSoftmax<64, 10>::forward(tensor<real, maxB, nC> &, tensor<idx_t, maxB> &, int) [maxB = 64, nC = 10]: starts
+40063130762: tensor<real, maxB> &NLLSoftmax<64, 10>::forward(tensor<real, maxB, nC> &, tensor<idx_t, maxB> &, int) [maxB = 64, nC = 10]: ends. took 19216 nsec
+40063131895: tensor<real, maxB, nC> &NLLSoftmax<64, 10>::backward(tensor<real, maxB> &, tensor<idx_t, maxB> &) [maxB = 64, nC = 10]: starts
+40063142615: tensor<real, maxB, nC> &NLLSoftmax<64, 10>::backward(tensor<real, maxB> &, tensor<idx_t, maxB> &) [maxB = 64, nC = 10]: ends. took 10500 nsec
+40063168744: tensor<real, M, K0, K1, K2> &Linear<64, 10, 128, 1, 1>::backward(tensor<real, M, N> &) [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: starts
+40064150029: tensor<real, M, K0, K1, K2> &Linear<64, 10, 128, 1, 1>::backward(tensor<real, M, N> &) [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: ends. took 981024 nsec
+40064150621: tensor<real, N0, N1, N2, N3> &Dropout<64, 128, 1, 1>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: starts
+40064320131: tensor<real, N0, N1, N2, N3> &Dropout<64, 128, 1, 1>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: ends. took 169220 nsec
+40064320612: tensor<real, N0, N1, N2, N3> &Relu<64, 128, 1, 1>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: starts
+40064414760: tensor<real, N0, N1, N2, N3> &Relu<64, 128, 1, 1>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: ends. took 93918 nsec
+40064415000: tensor<real, M, K0, K1, K2> &Linear<64, 128, 64, 12, 12>::backward(tensor<real, M, N> &) [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: starts
+40918827854: tensor<real, M, K0, K1, K2> &Linear<64, 128, 64, 12, 12>::backward(tensor<real, M, N> &) [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: ends. took 854412332 nsec
+40918832543: tensor<real, N0, N1, N2, N3> &Dropout<64, 64, 12, 12>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 64, N2 = 12, N3 = 12]: starts
+40928847535: tensor<real, N0, N1, N2, N3> &Dropout<64, 64, 12, 12>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 64, N2 = 12, N3 = 12]: ends. took 10014511 nsec
+40928848968: tensor<real, maxB, C, H, W> &MaxPooling2D<64, 64, 24, 24, 2>::backward(tensor<real, maxB, C, H / S, W / S> &) [maxB = 64, C = 64, H = 24, W = 24, S = 2]: starts
+40948305429: tensor<real, maxB, C, H, W> &MaxPooling2D<64, 64, 24, 24, 2>::backward(tensor<real, maxB, C, H / S, W / S> &) [maxB = 64, C = 64, H = 24, W = 24, S = 2]: ends. took 19455590 nsec
+40948310369: tensor<real, N0, N1, N2, N3> &Relu<64, 64, 24, 24>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 64, N2 = 24, N3 = 24]: starts
+40965280129: tensor<real, N0, N1, N2, N3> &Relu<64, 64, 24, 24>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 64, N2 = 24, N3 = 24]: ends. took 16969109 nsec
+40965282874: tensor<real, maxB, IC, H, W> &Convolution2D<64, 32, 26, 26, 3, 64>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: starts
+50106228529: tensor<real, maxB, IC, H, W> &Convolution2D<64, 32, 26, 26, 3, 64>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: ends. took 9140944923 nsec
+50106233028: tensor<real, N0, N1, N2, N3> &Relu<64, 32, 26, 26>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 32, N2 = 26, N3 = 26]: starts
+50116758034: tensor<real, N0, N1, N2, N3> &Relu<64, 32, 26, 26>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 32, N2 = 26, N3 = 26]: ends. took 10524446 nsec
+50116760348: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+50277280782: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 160519923 nsec
+50277283057: void Convolution2D<64, 1, 28, 28, 3, 32>::update() [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+50277308294: void Convolution2D<64, 1, 28, 28, 3, 32>::update() [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 24877 nsec
+50277308555: void Convolution2D<64, 32, 26, 26, 3, 64>::update() [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: starts
+50278560682: void Convolution2D<64, 32, 26, 26, 3, 64>::update() [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: ends. took 1251806 nsec
+50278561614: void Linear<64, 128, 64, 12, 12>::update() [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: starts
+50357366018: void Linear<64, 128, 64, 12, 12>::update() [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: ends. took 78803944 nsec
+50357411063: void Linear<64, 10, 128, 1, 1>::update() [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: starts
+50357497076: void Linear<64, 10, 128, 1, 1>::update() [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: ends. took 85672 nsec
+50357504209: sample 192 image 192 pred 2 truth 0
+50357505151: sample 193 image 193 pred 7 truth 7
+50357505522: sample 194 image 194 pred 2 truth 4
+50357505792: sample 195 image 195 pred 3 truth 9
+50357506043: sample 196 image 196 pred 3 truth 7
+50357506283: sample 197 image 197 pred 1 truth 8
+50357506534: sample 198 image 198 pred 3 truth 3
+50357506784: sample 199 image 199 pred 3 truth 2
+50357507024: sample 200 image 200 pred 3 truth 1
+50357507275: sample 201 image 201 pred 3 truth 1
+50357507515: sample 202 image 202 pred 3 truth 8
+50357507756: sample 203 image 203 pred 3 truth 3
+50357508006: sample 204 image 204 pred 6 truth 6
+50357508257: sample 205 image 205 pred 3 truth 1
+50357508507: sample 206 image 206 pred 3 truth 0
+50357508758: sample 207 image 207 pred 3 truth 3
+50357509018: sample 208 image 208 pred 1 truth 1
+50357509269: sample 209 image 209 pred 2 truth 0
+50357509519: sample 210 image 210 pred 3 truth 0
+50357509770: sample 211 image 211 pred 1 truth 1
+50357510030: sample 212 image 212 pred 9 truth 7
+50357510281: sample 213 image 213 pred 3 truth 2
+50357510521: sample 214 image 214 pred 2 truth 7
+50357510762: sample 215 image 215 pred 3 truth 3
+50357511012: sample 216 image 216 pred 3 truth 0
+50357511353: sample 217 image 217 pred 2 truth 4
+50357511683: sample 218 image 218 pred 3 truth 6
+50357511934: sample 219 image 219 pred 3 truth 5
+50357512174: sample 220 image 220 pred 3 truth 2
+50357512415: sample 221 image 221 pred 3 truth 6
+50357512655: sample 222 image 222 pred 2 truth 4
+50357512896: sample 223 image 223 pred 7 truth 7
+50357513146: sample 224 image 224 pred 3 truth 1
+50357513387: sample 225 image 225 pred 3 truth 8
+50357513627: sample 226 image 226 pred 3 truth 9
+50357513867: sample 227 image 227 pred 9 truth 9
+50357514118: sample 228 image 228 pred 3 truth 3
+50357514368: sample 229 image 229 pred 0 truth 0
+50357514649: sample 230 image 230 pred 7 truth 7
+50357514909: sample 231 image 231 pred 1 truth 1
+50357515160: sample 232 image 232 pred 3 truth 0
+50357515410: sample 233 image 233 pred 3 truth 2
+50357515661: sample 234 image 234 pred 3 truth 0
+50357515911: sample 235 image 235 pred 3 truth 3
+50357516162: sample 236 image 236 pred 3 truth 5
+50357516412: sample 237 image 237 pred 2 truth 4
+50357516653: sample 238 image 238 pred 3 truth 6
+50357516893: sample 239 image 239 pred 3 truth 5
+50357517134: sample 240 image 240 pred 3 truth 8
+50357517374: sample 241 image 241 pred 2 truth 6
+50357517614: sample 242 image 242 pred 3 truth 3
+50357517865: sample 243 image 243 pred 7 truth 7
+50357518115: sample 244 image 244 pred 3 truth 5
+50357518356: sample 245 image 245 pred 3 truth 8
+50357518596: sample 246 image 246 pred 3 truth 0
+50357518847: sample 247 image 247 pred 3 truth 9
+50357519087: sample 248 image 248 pred 3 truth 1
+50357519328: sample 249 image 249 pred 2 truth 0
+50357519578: sample 250 image 250 pred 2 truth 3
+50357519819: sample 251 image 251 pred 2 truth 1
+50357520059: sample 252 image 252 pred 3 truth 2
+50357520300: sample 253 image 253 pred 3 truth 2
+50357520540: sample 254 image 254 pred 3 truth 3
+50357520791: sample 255 image 255 pred 3 truth 3
+50357521061: Train Epoch 1 batch 3 (samples 192 - 256) ends
+50357778868: Train Epoch 1 batch 4 (samples 256 - 320) starts
+50357779860: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+50413363698: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 55583467 nsec
+50413365271: tensor<real, N0, N1, N2, N3> &Relu<64, 32, 26, 26>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 32, N2 = 26, N3 = 26]: starts
+50421799726: tensor<real, N0, N1, N2, N3> &Relu<64, 32, 26, 26>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 32, N2 = 26, N3 = 26]: ends. took 8421120 nsec
+50421801069: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 32, 26, 26, 3, 64>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: starts
+52148064878: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 32, 26, 26, 3, 64>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: ends. took 1726263188 nsec
+52148069306: tensor<real, N0, N1, N2, N3> &Relu<64, 64, 24, 24>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 64, N2 = 24, N3 = 24]: starts
+52158465550: tensor<real, N0, N1, N2, N3> &Relu<64, 64, 24, 24>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 64, N2 = 24, N3 = 24]: ends. took 10395823 nsec
+52158467974: tensor<real, maxB, C, H / S, W / S> &MaxPooling2D<64, 64, 24, 24, 2>::forward(tensor<real, maxB, C, H, W> &, int) [maxB = 64, C = 64, H = 24, W = 24, S = 2]: starts
+52176250461: tensor<real, maxB, C, H / S, W / S> &MaxPooling2D<64, 64, 24, 24, 2>::forward(tensor<real, maxB, C, H, W> &, int) [maxB = 64, C = 64, H = 24, W = 24, S = 2]: ends. took 17781956 nsec
+52176252515: tensor<real, N0, N1, N2, N3> &Dropout<64, 64, 12, 12>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 64, N2 = 12, N3 = 12]: starts
+52186139426: tensor<real, N0, N1, N2, N3> &Dropout<64, 64, 12, 12>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 64, N2 = 12, N3 = 12]: ends. took 9886560 nsec
+52186140247: tensor<real, M, N> &Linear<64, 128, 64, 12, 12>::forward(tensor<real, M, K0, K1, K2> &, int) [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: starts
+52670696129: tensor<real, M, N> &Linear<64, 128, 64, 12, 12>::forward(tensor<real, M, K0, K1, K2> &, int) [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: ends. took 484555320 nsec
+52670701118: tensor<real, N0, N1, N2, N3> &Relu<64, 128, 1, 1>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: starts
+52671322743: tensor<real, N0, N1, N2, N3> &Relu<64, 128, 1, 1>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: ends. took 621294 nsec
+52671323344: tensor<real, N0, N1, N2, N3> &Dropout<64, 128, 1, 1>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: starts
+52671480241: tensor<real, N0, N1, N2, N3> &Dropout<64, 128, 1, 1>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: ends. took 156696 nsec
+52671480622: tensor<real, M, N> &Linear<64, 10, 128, 1, 1>::forward(tensor<real, M, K0, K1, K2> &, int) [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: starts
+52672035901: tensor<real, M, N> &Linear<64, 10, 128, 1, 1>::forward(tensor<real, M, K0, K1, K2> &, int) [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: ends. took 554959 nsec
+52672036342: tensor<real, maxB> &NLLSoftmax<64, 10>::forward(tensor<real, maxB, nC> &, tensor<idx_t, maxB> &, int) [maxB = 64, nC = 10]: starts
+52672055709: tensor<real, maxB> &NLLSoftmax<64, 10>::forward(tensor<real, maxB, nC> &, tensor<idx_t, maxB> &, int) [maxB = 64, nC = 10]: ends. took 19036 nsec
+52672056871: tensor<real, maxB, nC> &NLLSoftmax<64, 10>::backward(tensor<real, maxB> &, tensor<idx_t, maxB> &) [maxB = 64, nC = 10]: starts
+52672067541: tensor<real, maxB, nC> &NLLSoftmax<64, 10>::backward(tensor<real, maxB> &, tensor<idx_t, maxB> &) [maxB = 64, nC = 10]: ends. took 10450 nsec
+52672067771: tensor<real, M, K0, K1, K2> &Linear<64, 10, 128, 1, 1>::backward(tensor<real, M, N> &) [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: starts
+52672984003: tensor<real, M, K0, K1, K2> &Linear<64, 10, 128, 1, 1>::backward(tensor<real, M, N> &) [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: ends. took 916011 nsec
+52672984384: tensor<real, N0, N1, N2, N3> &Dropout<64, 128, 1, 1>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: starts
+52673186947: tensor<real, N0, N1, N2, N3> &Dropout<64, 128, 1, 1>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: ends. took 169581 nsec
+52673187989: tensor<real, N0, N1, N2, N3> &Relu<64, 128, 1, 1>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: starts
+52673294771: tensor<real, N0, N1, N2, N3> &Relu<64, 128, 1, 1>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: ends. took 106471 nsec
+52673295232: tensor<real, M, K0, K1, K2> &Linear<64, 128, 64, 12, 12>::backward(tensor<real, M, N> &) [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: starts
+53595442852: tensor<real, M, K0, K1, K2> &Linear<64, 128, 64, 12, 12>::backward(tensor<real, M, N> &) [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: ends. took 922146879 nsec
+53595448052: tensor<real, N0, N1, N2, N3> &Dropout<64, 64, 12, 12>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 64, N2 = 12, N3 = 12]: starts
+53605444629: tensor<real, N0, N1, N2, N3> &Dropout<64, 64, 12, 12>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 64, N2 = 12, N3 = 12]: ends. took 9996067 nsec
+53605447054: tensor<real, maxB, C, H, W> &MaxPooling2D<64, 64, 24, 24, 2>::backward(tensor<real, maxB, C, H / S, W / S> &) [maxB = 64, C = 64, H = 24, W = 24, S = 2]: starts
+53622529658: tensor<real, maxB, C, H, W> &MaxPooling2D<64, 64, 24, 24, 2>::backward(tensor<real, maxB, C, H / S, W / S> &) [maxB = 64, C = 64, H = 24, W = 24, S = 2]: ends. took 17081763 nsec
+53622533666: tensor<real, N0, N1, N2, N3> &Relu<64, 64, 24, 24>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 64, N2 = 24, N3 = 24]: starts
+53639427352: tensor<real, N0, N1, N2, N3> &Relu<64, 64, 24, 24>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 64, N2 = 24, N3 = 24]: ends. took 16893085 nsec
+53639430528: tensor<real, maxB, IC, H, W> &Convolution2D<64, 32, 26, 26, 3, 64>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: starts
+62796169727: tensor<real, maxB, IC, H, W> &Convolution2D<64, 32, 26, 26, 3, 64>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: ends. took 9156738588 nsec
+62796173184: tensor<real, N0, N1, N2, N3> &Relu<64, 32, 26, 26>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 32, N2 = 26, N3 = 26]: starts
+62806815983: tensor<real, N0, N1, N2, N3> &Relu<64, 32, 26, 26>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 32, N2 = 26, N3 = 26]: ends. took 10642178 nsec
+62806817987: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+62968488274: tensor<real, maxB, IC, H, W> &Convolution2D<64, 1, 28, 28, 3, 32>::backward(tensor<real, maxB, OC, H - K + 1, W - K + 1> &) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 161669837 nsec
+62968491230: void Convolution2D<64, 1, 28, 28, 3, 32>::update() [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+62968516347: void Convolution2D<64, 1, 28, 28, 3, 32>::update() [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 24757 nsec
+62968516608: void Convolution2D<64, 32, 26, 26, 3, 64>::update() [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: starts
+62969744339: void Convolution2D<64, 32, 26, 26, 3, 64>::update() [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: ends. took 1227420 nsec
+62969745110: void Linear<64, 128, 64, 12, 12>::update() [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: starts
+63048227706: void Linear<64, 128, 64, 12, 12>::update() [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: ends. took 78482034 nsec
+63048232014: void Linear<64, 10, 128, 1, 1>::update() [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: starts
+63048319029: void Linear<64, 10, 128, 1, 1>::update() [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: ends. took 86653 nsec
+63048326172: sample 256 image 256 pred 1 truth 6
+63048326723: sample 257 image 257 pred 3 truth 4
+63048327064: sample 258 image 258 pred 9 truth 7
+63048368302: sample 259 image 259 pred 2 truth 5
+63048368572: sample 260 image 260 pred 0 truth 0
+63048368993: sample 261 image 261 pred 3 truth 6
+63048369263: sample 262 image 262 pred 3 truth 2
+63048369584: sample 263 image 263 pred 0 truth 7
+63048369865: sample 264 image 264 pred 3 truth 9
+63048370115: sample 265 image 265 pred 3 truth 8
+63048370456: sample 266 image 266 pred 3 truth 5
+63048370696: sample 267 image 267 pred 7 truth 9
+63048370947: sample 268 image 268 pred 3 truth 2
+63048371187: sample 269 image 269 pred 1 truth 1
+63048371448: sample 270 image 270 pred 1 truth 1
+63048371698: sample 271 image 271 pred 3 truth 4
+63048371949: sample 272 image 272 pred 0 truth 4
+63048372199: sample 273 image 273 pred 2 truth 5
+63048372439: sample 274 image 274 pred 3 truth 6
+63048372690: sample 275 image 275 pred 0 truth 4
+63048372940: sample 276 image 276 pred 1 truth 1
+63048373191: sample 277 image 277 pred 3 truth 2
+63048373441: sample 278 image 278 pred 3 truth 5
+63048373682: sample 279 image 279 pred 3 truth 3
+63048373942: sample 280 image 280 pred 3 truth 9
+63048374183: sample 281 image 281 pred 3 truth 3
+63048374443: sample 282 image 282 pred 0 truth 9
+63048374694: sample 283 image 283 pred 0 truth 0
+63048374944: sample 284 image 284 pred 3 truth 5
+63048375195: sample 285 image 285 pred 0 truth 9
+63048375455: sample 286 image 286 pred 3 truth 6
+63048375696: sample 287 image 287 pred 3 truth 5
+63048375936: sample 288 image 288 pred 3 truth 7
+63048376187: sample 289 image 289 pred 4 truth 4
+63048376437: sample 290 image 290 pred 3 truth 1
+63048376677: sample 291 image 291 pred 3 truth 3
+63048376928: sample 292 image 292 pred 3 truth 4
+63048377168: sample 293 image 293 pred 0 truth 0
+63048377429: sample 294 image 294 pred 0 truth 4
+63048377679: sample 295 image 295 pred 3 truth 8
+63048377930: sample 296 image 296 pred 0 truth 0
+63048378190: sample 297 image 297 pred 4 truth 4
+63048378441: sample 298 image 298 pred 3 truth 3
+63048378691: sample 299 image 299 pred 2 truth 6
+63048378932: sample 300 image 300 pred 1 truth 8
+63048379172: sample 301 image 301 pred 7 truth 7
+63048379433: sample 302 image 302 pred 6 truth 6
+63048379683: sample 303 image 303 pred 0 truth 0
+63048379934: sample 304 image 304 pred 3 truth 9
+63048380174: sample 305 image 305 pred 0 truth 7
+63048380435: sample 306 image 306 pred 3 truth 5
+63048380675: sample 307 image 307 pred 7 truth 7
+63048380926: sample 308 image 308 pred 3 truth 2
+63048381176: sample 309 image 309 pred 2 truth 1
+63048381416: sample 310 image 310 pred 1 truth 1
+63048381667: sample 311 image 311 pred 3 truth 6
+63048381907: sample 312 image 312 pred 3 truth 8
+63048382148: sample 313 image 313 pred 9 truth 9
+63048382408: sample 314 image 314 pred 3 truth 4
+63048382649: sample 315 image 315 pred 1 truth 1
+63048382899: sample 316 image 316 pred 3 truth 5
+63048383140: sample 317 image 317 pred 2 truth 2
+63048383400: sample 318 image 318 pred 3 truth 2
+63048383641: sample 319 image 319 pred 3 truth 9
+63048383921: Train Epoch 1 batch 4 (samples 256 - 320) ends
+63048652830: Train Epoch 1 batch 5 (samples 320 - 384) starts
+63048654002: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: starts
+63104780716: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 1, 28, 28, 3, 32>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 1, H = 28, W = 28, K = 3, OC = 32]: ends. took 56126304 nsec
+63104783742: tensor<real, N0, N1, N2, N3> &Relu<64, 32, 26, 26>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 32, N2 = 26, N3 = 26]: starts
+63116517203: tensor<real, N0, N1, N2, N3> &Relu<64, 32, 26, 26>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 32, N2 = 26, N3 = 26]: ends. took 11733071 nsec
+63116518335: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 32, 26, 26, 3, 64>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: starts
+64850673318: tensor<real, maxB, OC, H - K + 1, W - K + 1> &Convolution2D<64, 32, 26, 26, 3, 64>::forward(tensor<real, maxB, IC, H, W> &, int) [maxB = 64, IC = 32, H = 26, W = 26, K = 3, OC = 64]: ends. took 1734154413 nsec
+64850713193: tensor<real, N0, N1, N2, N3> &Relu<64, 64, 24, 24>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 64, N2 = 24, N3 = 24]: starts
+64865425136: tensor<real, N0, N1, N2, N3> &Relu<64, 64, 24, 24>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 64, N2 = 24, N3 = 24]: ends. took 14711481 nsec
+64865426688: tensor<real, maxB, C, H / S, W / S> &MaxPooling2D<64, 64, 24, 24, 2>::forward(tensor<real, maxB, C, H, W> &, int) [maxB = 64, C = 64, H = 24, W = 24, S = 2]: starts
+64890195492: tensor<real, maxB, C, H / S, W / S> &MaxPooling2D<64, 64, 24, 24, 2>::forward(tensor<real, maxB, C, H, W> &, int) [maxB = 64, C = 64, H = 24, W = 24, S = 2]: ends. took 24768082 nsec
+64890198798: tensor<real, N0, N1, N2, N3> &Dropout<64, 64, 12, 12>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 64, N2 = 12, N3 = 12]: starts
+64900278904: tensor<real, N0, N1, N2, N3> &Dropout<64, 64, 12, 12>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 64, N2 = 12, N3 = 12]: ends. took 10079364 nsec
+64900280117: tensor<real, M, N> &Linear<64, 128, 64, 12, 12>::forward(tensor<real, M, K0, K1, K2> &, int) [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: starts
+65354859127: tensor<real, M, N> &Linear<64, 128, 64, 12, 12>::forward(tensor<real, M, K0, K1, K2> &, int) [M = 64, N = 128, K0 = 64, K1 = 12, K2 = 12]: ends. took 454578500 nsec
+65354863856: tensor<real, N0, N1, N2, N3> &Relu<64, 128, 1, 1>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: starts
+65355492054: tensor<real, N0, N1, N2, N3> &Relu<64, 128, 1, 1>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: ends. took 627797 nsec
+65355492845: tensor<real, N0, N1, N2, N3> &Dropout<64, 128, 1, 1>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: starts
+65355651395: tensor<real, N0, N1, N2, N3> &Dropout<64, 128, 1, 1>::forward(tensor<real, N0, N1, N2, N3> &, int) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: ends. took 158219 nsec
+65355651946: tensor<real, M, N> &Linear<64, 10, 128, 1, 1>::forward(tensor<real, M, K0, K1, K2> &, int) [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: starts
+65356249205: tensor<real, M, N> &Linear<64, 10, 128, 1, 1>::forward(tensor<real, M, K0, K1, K2> &, int) [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: ends. took 596918 nsec
+65356249746: tensor<real, maxB> &NLLSoftmax<64, 10>::forward(tensor<real, maxB, nC> &, tensor<idx_t, maxB> &, int) [maxB = 64, nC = 10]: starts
+65356270826: tensor<real, maxB> &NLLSoftmax<64, 10>::forward(tensor<real, maxB, nC> &, tensor<idx_t, maxB> &, int) [maxB = 64, nC = 10]: ends. took 20759 nsec
+65356271968: tensor<real, maxB, nC> &NLLSoftmax<64, 10>::backward(tensor<real, maxB> &, tensor<idx_t, maxB> &) [maxB = 64, nC = 10]: starts
+65356282999: tensor<real, maxB, nC> &NLLSoftmax<64, 10>::backward(tensor<real, maxB> &, tensor<idx_t, maxB> &) [maxB = 64, nC = 10]: ends. took 10810 nsec
+65356283210: tensor<real, M, K0, K1, K2> &Linear<64, 10, 128, 1, 1>::backward(tensor<real, M, N> &) [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: starts
+65357207096: tensor<real, M, K0, K1, K2> &Linear<64, 10, 128, 1, 1>::backward(tensor<real, M, N> &) [M = 64, N = 10, K0 = 128, K1 = 1, K2 = 1]: ends. took 923676 nsec
+65357207337: tensor<real, N0, N1, N2, N3> &Dropout<64, 128, 1, 1>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: starts
+65357385754: tensor<real, N0, N1, N2, N3> &Dropout<64, 128, 1, 1>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: ends. took 178217 nsec
+65357386065: tensor<real, N0, N1, N2, N3> &Relu<64, 128, 1, 1>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: starts
+65357488368: tensor<real, N0, N1, N2, N3> &Relu<64, 128, 1, 1>::backward(tensor<real, N0, N1, N2, N3> &) [N0 = 64, N1 = 128, N2 = 1, N3 = 1]: ends. took
